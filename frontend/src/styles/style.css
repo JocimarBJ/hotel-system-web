@@ -1,0 +1,167 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin:0; 
+    padding:0; 
+    background:#f5f5f5; 
+    
+}
+.container { 
+    max-width:1000px; 
+    margin:20px auto; 
+    background:#fff; 
+    padding:16px; 
+    border-radius:8px; 
+    box-shadow:0 2px 8px rgba(0,0,0,0.1); 
+}
+header { 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+}
+header nav a { 
+    margin-right:10px; 
+    text-decoration:none; 
+}
+.table {
+    text-align: center;
+    width:100%; 
+    border-collapse:collapse; 
+    margin-top:12px; 
+}
+.table th, .table td {
+    padding:8px; 
+    border:1px solid #ddd; 
+}
+.login-box { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width:400px; 
+    margin:60px auto; 
+    background:#fff; 
+    padding:16px; 
+    border-radius:8px; 
+    box-shadow:0 2px 8px rgba(0,0,0,0.1); 
+}
+.login-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.login-box form button, .form button {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+.login-box input {
+    width: 90%;
+    padding:8px; 
+    margin-bottom:8px; 
+}
+
+.error { 
+    color:crimson; 
+}
+
+
+.app-header { 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    gap:12px; 
+    padding-bottom:12px; 
+    border-bottom:1px solid #eee; 
+}
+
+/* Dashboard (tela principal) */
+.cards { 
+    display:flex; 
+    gap:12px; 
+    margin-top:12px; 
+    flex-wrap:wrap; }
+.card { 
+    display:inline-block; 
+    padding:18px; 
+    background:linear-gradient(135deg,#f1f2f2,#d9eafa); 
+    border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.06); 
+    text-decoration:none; 
+    color:#333;
+    min-width:120px; 
+    text-align:center; 
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow:0 2px 8px rgba(0,0,0,0.3); 
+
+}
+
+.form { display:flex; flex-direction: column; max-width:520px; }
+.form input, .form select { 
+    padding:10px; 
+    margin-bottom:8px; 
+    width:100%; 
+    border:1px solid #ddd; 
+    border-radius:6px; 
+}
+
+/* Estilização dos botões */
+.btn, form button {
+    background:#1976d2; 
+    color:white; 
+    padding:6px 12px; 
+    border-radius:6px; 
+    text-decoration:none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+}
+.btn:hover, form button:hover{
+    background:#8fc7ff;
+    color: #10589f;
+}
+
+.btn-delete{
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+
+    transition: 0.2s;
+    font-weight: 600;
+}
+.btn-delete:hover {
+    background: #fcc3c1;
+    color: #ff0800;
+}
+
+.logout-btn {
+    background: #ff4444;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.logout-btn:hover {
+    background: #cc0000;
+}
+
+.checkbox-field {
+  margin: 10px 0px 0;
+}
+
+.checkbox-field input[type="checkbox"] {
+  width: 100%;
+  max-width: 15px;
+}
