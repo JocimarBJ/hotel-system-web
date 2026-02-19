@@ -1,4 +1,4 @@
-name: deploy-frontend
+name: deploy
 
 on:
   push:
@@ -20,13 +20,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: instalar e buildar
+      - name: build
         run: |
           cd frontend
           npm install
           npm run build
 
-      - name: upload
+      - name: upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/dist
